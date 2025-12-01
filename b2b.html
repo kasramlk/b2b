@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OtelCiro – Bosphorus Line 2025-2026 Fiyat Listesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Colors from the reference image */
+      --banner-left-bg: #051638; /* Dark Navy */
+      --banner-right-bg: #0056b3; /* Royal Blue */
+      --text-cyan: #3fa9f5;
+      --text-white: #ffffff;
+      --icon-white: #ffffff;
+      --logo-red: #e11d48;
+      
+      /* Existing Corporate Palette for body */
+      --color-bg-dark: #0f172a;
+      --color-surface: #ffffff;
+      --color-surface-secondary: #f8fafc;
+      --color-border: #e2e8f0;
+      --color-text-main: #1e293b;
+      --color-text-muted: #64748b;
+      --color-primary: #0056b3;
+      --color-primary-dark: #004494;
+      
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-bg-dark);
+      /* Subtle marble-like fluid background hint */
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(5, 22, 56, 0.5) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 86, 179, 0.3) 0px, transparent 50%);
+      color: var(--color-text-main);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* --- NEW BANNER DESIGN --- */
+    .banner {
+      display: flex;
+      width: 100%;
+      min-height: 320px;
+      border-radius: 0; /* The image shows sharp corners or full width, but we keep slight rounding for web feel if desired, or go sharp */
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    /* LEFT SECTION (Dark Navy) */
+    .banner-left {
+      flex: 2; /* Approx 66% width */
+      background-color: var(--banner-left-bg);
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      /* Subtle fluid texture overlay if supported, otherwise solid color */
+      background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.03) 0%, transparent 20%);
+    }
+
+    .banner-left-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    /* Logo Circle */
+    .logo-circle-container {
+      flex-shrink: 0;
+      width: 220px;
+      height: 220px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .logo-icon-box {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #0ea5e9, #0284c7);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+
+    .logo-icon-circle {
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+      border: 6px solid #e0f2fe; /* Light blue ring effect */
+    }
+
+    .logo-text-img {
+      text-align: center;
+    }
+    .logo-main-text {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0056b3;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .logo-sub-text {
+      font-size: 10px;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    /* Contact Info Area */
+    .info-area {
+      color: white;
+      flex-grow: 1;
+    }
+
+    .brand-name-cyan {
+      color: var(--text-cyan);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    
+    .brand-name-white {
+      color: white;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 1.2;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    .brand-name-white::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 100%;
+      height: 3px;
+      background-color: var(--text-cyan);
+      border-radius: 2px;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .icon-circle {
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--banner-left-bg);
+    }
+    
+    .icon-circle svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* Decor Elements Left */
+    .star-sparkle {
+      position: absolute;
+      color: rgba(255,255,255,0.6);
+    }
+    .star-1 { top: 40px; left: 40px; width: 40px; height: 40px; }
+    .star-2 { bottom: 60px; left: 280px; width: 50px; height: 50px; }
+    .star-3 { top: 60px; right: 40px; width: 50px; height: 50px; }
+
+    .dots-left {
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      display: flex;
+      gap: 8px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 50%;
+    }
+
+
+    /* RIGHT SECTION (Royal Blue) */
+    .banner-right {
+      flex: 1; /* Approx 33% width */
+      background-color: var(--banner-right-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Square Logo Box */
+    .square-logo {
+      background: white;
+      padding: 15px 15px 5px 15px; /* bottom padding less for script overflow */
+      border: 1px solid white;
+      margin-bottom: 20px;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .inner-border {
+      border: 2px solid var(--logo-red);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .square-text-block {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 1;
+      color: #1e293b;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .script-line {
+      font-family: 'Great Vibes', cursive;
+      color: var(--logo-red);
+      font-size: 32px;
+      line-height: 0.5;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      transform: rotate(-5deg);
+    }
+
+    .company-legal-text {
+      color: white;
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 1.4;
+      max-width: 250px;
+      opacity: 0.9;
+    }
+
+    /* Decor Elements Right */
+    .dots-right {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      gap: 8px;
+    }
+    
+    .star-4 { bottom: 40px; right: 40px; width: 60px; height: 60px; color: rgba(255,255,255,0.4); position: absolute; }
+
+
+    /* --- MAIN CONTENT & CARDS (Existing styles maintained) --- */
+    .main-content {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .page-title-row {
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--color-surface-secondary);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .page-title h2 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text-main);
+    }
+    
+    .page-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .status-badge {
+      background: #eff6ff;
+      color: var(--color-primary-dark);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .hotel-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: 32px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg); /* Slightly stronger shadow on hover */
+      border-color: #cbd5e1;
+    }
+
+    .hotel-top-section {
+      display: flex;
+      gap: 24px;
+      padding: 24px;
+      background: linear-gradient(to right, #ffffff, #f8fafc);
+    }
+
+    .hotel-info {
+      flex: 1;
+    }
+
+    .hotel-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-text-main);
+      margin: 0 0 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .hotel-name::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: linear-gradient(to bottom, var(--color-primary), #0ea5e9);
+      border-radius: 4px;
+    }
+
+    .hotel-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .period-alert {
+      font-size: 13px;
+      background: #f0f9ff;
+      color: #0369a1;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      display: inline-block;
+      margin-top: 8px;
+      border-left: 3px solid #0ea5e9;
+    }
+
+    .hotel-image-container {
+      width: 200px;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .hotel-img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      display: block;
+    }
+
+    .map-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: white;
+      border: 1px solid var(--color-border);
+      color: var(--color-text-main);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 99px;
+      margin-top: 8px;
+      transition: all 0.2s;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      width: 100%;
+    }
+
+    .map-btn:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+      color: var(--color-primary);
+    }
+
+    .table-container {
+      padding: 0 24px 24px 24px;
+    }
+
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .price-table th {
+      text-align: left;
+      padding: 12px 16px;
+      color: var(--color-text-muted);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    .price-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-main);
+    }
+
+    .price-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .price-table tbody tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    .price-table .num {
+      text-align: right;
+      font-weight: 600;
+      color: var(--color-primary-dark);
+      font-feature-settings: "tnum";
+    }
+
+    /* SVG STAR SHAPE */
+    .svg-star {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.5;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 850px) {
+      .banner {
+        flex-direction: column;
+      }
+      .banner-left {
+        flex: auto;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .banner-left-content {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .contact-list {
+        align-items: center;
+      }
+      .brand-name-white::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+      }
+      .dots-left {
+        display: none;
+      }
+      .dots-right {
+        display: none;
+      }
+      .banner-right {
+        padding: 30px;
+      }
+      
+      .hotel-top-section {
+        flex-direction: column;
+      }
+      .hotel-image-container {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+      }
+      .hotel-img {
+        width: 120px;
+        height: 80px;
+      }
+      .map-btn {
+        width: auto;
+        flex: 1;
+        margin-top: 0;
+        height: 80px;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- NEW BANNER SECTION -->
+    <div class="banner">
+      
+      <!-- LEFT SIDE: Navy -->
+      <div class="banner-left">
+        <!-- Decor: Stars -->
+        <svg class="star-sparkle star-1 svg-star" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" /></svg>
+        <svg class="star-sparkle star-2 svg-star" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" /></svg>
+        <svg class="star-sparkle star-3 svg-star" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" /></svg>
+        
+        <!-- Decor: Dots Bottom Left -->
+        <div class="dots-left">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="banner-left-content">
+          <!-- Circle Logo -->
+          <div class="logo-circle-container">
+            <div class="logo-icon-box">
+               <div class="logo-icon-circle"></div>
+            </div>
+            <div class="logo-text-img">
+              <div class="logo-main-text">OtelCiro</div>
+              <div class="logo-sub-text">Bosphorus Line</div>
+            </div>
+          </div>
+
+          <!-- Text & Contact Info -->
+          <div class="info-area">
+            <div class="brand-name-cyan">Otelciro</div>
+            <div class="brand-name-white">Bosphorus line</div>
+            
+            <div class="contact-list">
+              <div class="contact-row">
+                <div class="icon-circle">
+                  <!-- Phone Icon -->
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  +90 501 332 43 00<br>
+                  +90 554 500 60 01
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <div class="icon-circle">
+                   <!-- Mail Icon -->
+                   <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div style="align-self:center;">info@otelciro.com</div>
+              </div>
+
+              <div class="contact-row">
+                <div class="icon-circle">
+                  <!-- Home/Loc Icon -->
+                  <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+                <div>
+                  CEVİZLİK MAH. İSTANBUL CAD. HAMURCU<br>
+                  NO: 12 İÇ KAPI NO: 26 BAKIRKÖY / İSTANBUL
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Royal Blue -->
+      <div class="banner-right">
+        <!-- Decor: Dots Top Right -->
+        <div class="dots-right">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        
+        <!-- Decor: Star Bottom Right -->
+        <svg class="star-sparkle star-4 svg-star" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" /></svg>
+
+        <div class="square-logo">
+          <div class="inner-border">
+            <div class="square-text-block">BOS<br>PHO<br>RUS</div>
+            <div class="script-line">line</div>
+          </div>
+        </div>
+
+        <div class="company-legal-text">
+          BOSPHORUS LINE TURİZM<br>
+          ORGANİZASYON EMLAK TAŞIMACILIK<br>
+          İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+      <div class="page-title-row">
+        <div>
+          <h2>2025-2026 Otel Fiyat Listesi</h2>
+          <div class="page-desc">
+            Tüm fiyatlar <strong>Euro (&euro;)</strong> cinsindedir (aksi belirtilmedikçe). 
+            Yılbaşı dönemi tablosu bulunmayan otellerde taban fiyatlara <strong>+25 &euro;</strong> uygulanır.
+          </div>
+        </div>
+        <div class="status-badge">Enterprise Partner</div>
+      </div>
+
+      <!-- 1. NOVA PLAZA CRYSTAL HOTEL & SPA -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">NOVA PLAZA CRYSTAL HOTEL &amp; SPA</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Taksim, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              01.11.2025 – 15.03.2026 dönemleri için kurumsal fiyatlar.
+              <br><span style="color:#e11d48; font-weight:700;">STOP SALE: 27-28 Kasım. (29-31 Aralık & 01 Ocak Stop)</span>
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/1000000/120000/114400/114364/b2360d49.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Nova Plaza Crystal" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Nova+Plaza+Crystal+Hotel+Taksim" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>01.11.25 – 27.12.25</th>
+                <th>28.12.25 – 02.01.26 (Yılbaşı)</th>
+                <th>03.01.26 – 15.03.26</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Double room</td>
+                <td class="num">65 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">70 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple room</td>
+                <td class="num">80 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">105 &euro;</td>
+              </tr>
+              <tr>
+                <td>Family room 4p</td>
+                <td class="num">100 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">130 &euro;</td>
+              </tr>
+              <tr>
+                <td>Family Connection 4p</td>
+                <td class="num">135 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">160 &euro;</td>
+              </tr>
+              <tr>
+                <td>7–12 Çocuk</td>
+                <td class="num">15 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">15 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 2. NOVA PLAZA ORION HOTEL & SPA -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">NOVA PLAZA ORION HOTEL &amp; SPA</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Taksim, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              01.11.2025 – 15.03.2026 dönemleri için kurumsal fiyatlar.
+              <br><span style="color:#e11d48; font-weight:700;">STOP SALE: 27-28 Kasım, 03-04 Ocak. (29-31 Aralık & 01 Ocak Stop)</span>
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://novaplazahotels.com/tr/wp-content/uploads/sites/4/2023/06/orion-intro-1-scaled.jpeg" alt="Nova Plaza Orion" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Nova+Plaza+Orion+Hotel+Taksim" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>01.11.25 – 27.12.25</th>
+                <th>28.12.25 – 02.01.26 (Yılbaşı)</th>
+                <th>03.01.26 – 15.03.26</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Double room</td>
+                <td class="num">55 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">55 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple room</td>
+                <td class="num">70 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">70 &euro;</td>
+              </tr>
+              <tr>
+                <td>Family Connection 4p</td>
+                <td class="num">115 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">115 &euro;</td>
+              </tr>
+              <tr>
+                <td>Family Connection 5p</td>
+                <td class="num">125 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">125 &euro;</td>
+              </tr>
+              <tr>
+                <td>7–12 Çocuk</td>
+                <td class="num">15 &euro;</td>
+                <td class="num" style="color:#e11d48;">Stop</td>
+                <td class="num">15 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3. GRAND HOTEL GULSOY -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">GRAND HOTEL GÜLSOY</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Vezneciler / Eski Şehir
+              </span>
+            </div>
+            <div class="period-alert">
+              01.11.2025 – 15.03.2026 dönemleri için kurumsal fiyatlar.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/2000000/1600000/1594200/1594173/d3392e49.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Grand Hotel Gulsoy" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Grand+Hotel+Gulsoy+Istanbul" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>01.11.25 – 25.12.25</th>
+                <th>28.12.25 – 02.01.26</th>
+                <th>03.01.26 – 15.03.26</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single room</td>
+                <td class="num">68 &euro;</td>
+                <td class="num" style="color:#ef4444;">Stop</td>
+                <td class="num">68 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double room</td>
+                <td class="num">74 &euro;</td>
+                <td class="num" style="color:#ef4444;">Stop</td>
+                <td class="num">74 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple room</td>
+                <td class="num">98 &euro;</td>
+                <td class="num" style="color:#ef4444;">Stop</td>
+                <td class="num">98 &euro;</td>
+              </tr>
+              <tr>
+                <td>7–12 Çocuk</td>
+                <td class="num">13 &euro;</td>
+                <td class="num" style="color:#ef4444;">Stop</td>
+                <td class="num">13 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 4. CIP HOTEL BAKIRKÖY -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">CIP HOTEL BAKIRKÖY</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Bakırköy, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              Tek dönem kurumsal fiyatlar. Yılbaşı döneminde taban fiyatlara +25 &euro; eklenir.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://www.ciphotel.com/img/slider/about.jpg" alt="CIP Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=CIP+Hotel+Bakirkoy" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">45 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">50 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple</td>
+                <td class="num">65 &euro;</td>
+              </tr>
+              <tr>
+                <td>Quad</td>
+                <td class="num">80 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 5. RAYS HOTEL BAKIRKÖY -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">RAYS HOTEL BAKIRKÖY</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Bakırköy, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              Tek dönem kurumsal fiyatlar. Yılbaşı döneminde taban fiyatlara +25 &euro; eklenir.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://cdng.jollytur.com/files/cms/media/hotel/dc0f30cc-1ee4-492a-8441-929b63f33df2-1024.jpg" alt="Rays Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Rays+Hotel+Bakirkoy" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">35 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">40 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple</td>
+                <td class="num">55 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 6. BLUEWAY HOTEL BAKIRKÖY -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">BLUEWAY HOTEL BAKIRKÖY</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Bakırköy, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              Tek dönem kurumsal fiyatlar. Yılbaşı döneminde taban fiyatlara +25 &euro; eklenir.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/12000000/11950000/11940600/11940538/088bd7b9.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Blueway Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Blueway+Hotel+Bakirkoy" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Double</td>
+                <td class="num">35 &euro;</td>
+              </tr>
+              <tr>
+                <td>Deluxe Double</td>
+                <td class="num">40 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple</td>
+                <td class="num">55 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 7. ISTANBUL KENSINGTON KUNLUN HOTEL TOPKAPI -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">ISTANBUL KENSINGTON KUNLUN HOTEL</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Topkapı, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              Dönemsel kurumsal fiyatlar. Yılbaşı dönemi ayrı fiyatlandırılmıştır.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/39000000/38530000/38522700/38522625/b34f7394.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Kensington Kunlun" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Kunlun+Kensington+Hotel+Istanbul" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Dönem</th>
+                <th>Single</th>
+                <th>Double</th>
+                <th>Triple</th>
+                <th>Family</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01.11.25 – 27.12.25</td>
+                <td class="num">35 &euro;</td>
+                <td class="num">43 &euro;</td>
+                <td class="num">53 &euro;</td>
+                <td class="num">62 &euro;</td>
+              </tr>
+              <tr>
+                <td>27.12.25 – 02.01.26 (Yılbaşı)</td>
+                <td class="num">65 &euro;</td>
+                <td class="num">78 &euro;</td>
+                <td class="num">108 &euro;</td>
+                <td class="num">134 &euro;</td>
+              </tr>
+              <tr>
+                <td>03.01.26 – 17.03.26</td>
+                <td class="num">35 &euro;</td>
+                <td class="num">43 &euro;</td>
+                <td class="num">53 &euro;</td>
+                <td class="num">62 &euro;</td>
+              </tr>
+              <tr>
+                <td>18.03.26 – 31.10.26</td>
+                <td class="num">53 &euro;</td>
+                <td class="num">57 &euro;</td>
+                <td class="num">65 &euro;</td>
+                <td class="num">74 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 8. CANKA NİŞANTAŞI HOTEL -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">CANKA NİŞANTAŞI HOTEL</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Nişantaşı, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              01.12.25 – 25.12.25 ve 05.01.26 – 15.03.26 dönemleri. Yılbaşı +35 &euro;.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://cankaresidences.com/img/85538b78272aa3d2.webp" alt="Canka Nişantaşı" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Canka+Residence+Nisantasi" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Kapasite</th>
+                <th>Fiyat (Temel)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Economy Suite</td>
+                <td>2 kişi</td>
+                <td class="num">45 &euro;</td>
+              </tr>
+              <tr>
+                <td>Standard Suite</td>
+                <td>3 kişi</td>
+                <td class="num">50 &euro;</td>
+              </tr>
+              <tr>
+                <td>Superior Suite</td>
+                <td>4 kişi</td>
+                <td class="num">56 &euro;</td>
+              </tr>
+              <tr>
+                <td>Deluxe Suite</td>
+                <td>5 kişi</td>
+                <td class="num">60 &euro;</td>
+              </tr>
+              <tr>
+                <td>Junior Family Suite</td>
+                <td>6 kişi</td>
+                <td class="num">70 &euro;</td>
+              </tr>
+              <tr>
+                <td>Penthouse Family Suite</td>
+                <td>7 kişi</td>
+                <td class="num">82 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 9. ISTANBUL PETRION HOTEL BALAT -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">ISTANBUL PETRION HOTEL BALAT</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Balat, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              01.12.25 – 25.12.25 ve 03.01.26 – 17.03.26. Yılbaşı +25 &euro;.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/365282363.jpg?k=0d4517ee340b79991cae5c4228dc308d434e0c913ad181f93cc8c4298fe0c843&o=" alt="Petrion Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Petrion+Hotel+Balat" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">51 &euro;</td>
+              </tr>
+              <tr>
+                <td>Deniz manzaralı Single</td>
+                <td class="num">55 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">55 &euro;</td>
+              </tr>
+              <tr>
+                <td>Deniz manzaralı Double</td>
+                <td class="num">60 &euro;</td>
+              </tr>
+              <tr>
+                <td>Quad Junior Suite</td>
+                <td class="num">110 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 10. TAKSIM NIS HOTEL -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">TAKSIM NIS HOTEL</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Taksim, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              2025-2026 sezonu. Yılbaşı +25 &euro;.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/13000000/12580000/12578400/12578322/4669c566.jpg?impolicy=fcrop&w=1200&h=800&quality=medium" alt="Taksim Nis Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Taksim+Nis+Hotel" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">51 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">53 &euro;</td>
+              </tr>
+              <tr>
+                <td>Triple</td>
+                <td class="num">60 &euro;</td>
+              </tr>
+              <tr>
+                <td>Connection room (3 kişi)</td>
+                <td class="num">64 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 11. ISTANBUL BEYAZID BELMOND HOTEL -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">ISTANBUL BEYAZID BELMOND HOTEL</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Beyazıt, Eski Şehir
+              </span>
+            </div>
+            <div class="period-alert">
+              2025-2026 sezonu. Yılbaşı +25 &euro; karşılığı USD.
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/504391242.jpg?k=b9cfa520b172a4c6287b11f6940ab105da18419b4ec9d42399d0bbb253e19002&o=" alt="Beyazid Belmond" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Istanbul+Old+City+Beyazit+Belmond+Hotel" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">32 USD</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">35 USD</td>
+              </tr>
+              <tr>
+                <td>Triple</td>
+                <td class="num">45 USD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 12. PERA STAR HOTEL -->
+      <div class="hotel-card">
+        <div class="hotel-top-section">
+          <div class="hotel-info">
+            <h3 class="hotel-name">PERA STAR HOTEL</h3>
+            <div class="hotel-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Pera, İstanbul
+              </span>
+            </div>
+            <div class="period-alert">
+              01.12.2025 – 22.12.2025 Dönemi
+            </div>
+          </div>
+          <div class="hotel-image-container">
+            <img src="https://images.trvl-media.com/lodging/121000000/120490000/120483300/120483221/a4029bcf.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Pera Star Hotel" class="hotel-img" />
+            <a href="https://www.google.com/maps/search/?api=1&query=Pera+Star+Hotel+Istanbul" target="_blank" class="map-btn">
+              <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+              Google Harita
+            </a>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Oda Tipi</th>
+                <th>Fiyat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Single</td>
+                <td class="num">53 &euro;</td>
+              </tr>
+              <tr>
+                <td>Double</td>
+                <td class="num">56 &euro;</td>
+              </tr>
+              <tr>
+                <td>Twin</td>
+                <td class="num">57 &euro;</td>
+              </tr>
+              <tr>
+                <td>Comfort Double + Extra Bed</td>
+                <td class="num">60 &euro;</td>
+              </tr>
+              <tr>
+                <td>Family Comfort Quad</td>
+                <td class="num">110 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
